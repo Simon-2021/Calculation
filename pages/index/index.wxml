@@ -2,7 +2,6 @@
 <view class="page">
   <view class="page-hd-user">
      <view class="title-user">Calculation</view> 
-    <!-- <view class="page__desc">四则运算测试题库</view> -->
   </view>
   <view class="page__bd">
     <view class="weui-cells__title">题目</view>

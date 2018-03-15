@@ -82,8 +82,10 @@ Page({
         this.data.result = value;
         break;
     }
+    wx.vibrateShort();    
   },
   keyed: function (e) {
+    wx.vibrateShort();
     switch (e.currentTarget.id) {
       case '10':
         this.backspace();
@@ -124,6 +126,7 @@ Page({
         this.ask();
       }, 1000);
     } else {
+      wx.vibrateLong();      
       wx.showToast({
         title: '回答错误',
         duration: 1000,
