@@ -33,7 +33,7 @@ Page({
     switch (operation) {
       case 1:
         value = Math.ceil(20 + Math.random() * 80);
-        a = Math.ceil(10+Math.random() * (value-20));
+        a = Math.ceil(10 + Math.random() * (value - 20));
         b = value - a;
         this.setData({
           question: a + ' + ' + b + ' =',
@@ -42,8 +42,8 @@ Page({
         this.data.result = value;
         break;
       case 2:
-        value = Math.round(10+Math.random() * 80);
-        a = Math.ceil(10+Math.random() * (90 - value));
+        value = Math.round(10 + Math.random() * 80);
+        a = Math.ceil(10 + Math.random() * (90 - value));
         b = a + value;
         this.setData({
           question: b + ' － ' + a + ' =',
@@ -53,7 +53,7 @@ Page({
         break;
       case 3:
         a = Math.ceil(1 + Math.random() * 32);
-        b = Math.ceil(1+Math.random() * (Math.floor(100 / a)-1));
+        b = Math.ceil(1 + Math.random() * (Math.floor(100 / a) - 1));
         value = a * b;
         this.setData({
           question: a + ' × ' + b + ' =',
@@ -62,8 +62,8 @@ Page({
         this.data.result = value;
         break;
       case 4:
-        value = Math.ceil(1+Math.random() * 32);
-        a = Math.ceil(1 + Math.random() * (Math.floor(100 / value)-1));
+        value = Math.ceil(1 + Math.random() * 32);
+        a = Math.ceil(1 + Math.random() * (Math.floor(100 / value) - 1));
         b = a * value;
         this.setData({
           question: b + ' ÷ ' + a + ' =',
@@ -82,7 +82,7 @@ Page({
         this.data.result = value;
         break;
     }
-    wx.vibrateShort();    
+    wx.vibrateShort();
   },
   keyed: function (e) {
     wx.vibrateShort();
@@ -110,7 +110,7 @@ Page({
     })
   },
   submit: function () {
-    if(this.data.answer == '') {
+    if (this.data.answer == '') {
       wx.showToast({
         title: '请输入答案',
         duration: 1000,
@@ -126,7 +126,7 @@ Page({
         this.ask();
       }, 1000);
     } else {
-      wx.vibrateLong();      
+      wx.vibrateLong();
       wx.showToast({
         title: '回答错误',
         duration: 1000,

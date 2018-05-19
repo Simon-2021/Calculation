@@ -1,7 +1,7 @@
-﻿<!--index.wxml-->
+<!--index.wxml-->
 <view class="page">
   <view class="page-hd-user">
-     <view class="title-user">Calculation</view> 
+    <view class="title-user">Calculation</view>
   </view>
   <view class="page__bd">
     <view class="weui-cells__title">题目 </view>
@@ -13,18 +13,18 @@
     <view class="weui-cells__title">答案 </view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell cell-user">
-         <view class="answer-user">{{answer}}</view> 
+        <view class="answer-user">{{answer}}</view>
       </view>
     </view>
     <view class="weui-grids grid-bottom-user">
       <block wx:for="{{grids}}">
-         <button class="weui-grid grid-user" hover-class="weui-grid_active weui-grid_active-user" id='{{item.id}}' bindtap='keyed'> 
+        <button class="weui-grid grid-user" hover-class="weui-grid_active weui-grid_active-user" id='{{item.id}}' bindtap='keyed'>
           <view class="weui-grid__label num-user">{{item.key}}</view>
-         </button> 
+        </button>
       </block>
     </view>
-    <view class="weui-footer weui-footer_fixed-bottom">
-      <view class="weui-footer__text">Copyright © 2018 Simon</view>
-    </view>
+  </view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 Simon</view>
   </view>
 </view>
